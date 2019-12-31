@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ChainReactionGame.dir/Box.cpp.o"
   "CMakeFiles/ChainReactionGame.dir/main.cpp.o"
   "ChainReactionGame"
   "ChainReactionGame.pdb"

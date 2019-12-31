@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/shapes.dir/Box.cpp.o"
   "CMakeFiles/shapes.dir/shapes.cpp.o"
   "shapes"
   "shapes.pdb"

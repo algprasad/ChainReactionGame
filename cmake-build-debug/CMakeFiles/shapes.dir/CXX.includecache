@@ -6,10 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/alg/CLionProjects/ChainReactionGame/Box.h
+Team.h
+/home/alg/CLionProjects/ChainReactionGame/Team.h
+SFML/Graphics.hpp
+-
+
+/home/alg/CLionProjects/ChainReactionGame/Team.h
+
 /home/alg/CLionProjects/ChainReactionGame/shapes.cpp
 iostream
 -
 SFML/Graphics.hpp
+-
+Box.h
+/home/alg/CLionProjects/ChainReactionGame/Box.h
+string
 -
 
 /home/alg/Documents/SFML-2.5.1/include/SFML/Config.hpp

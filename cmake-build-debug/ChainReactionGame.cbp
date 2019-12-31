@@ -134,6 +134,17 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/Box.cpp">
+			<Option target="ChainReactionGame"/>
+			<Option target="shapes"/>
+		</Unit>
+		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/Box.h">
+			<Option target="ChainReactionGame"/>
+			<Option target="shapes"/>
+		</Unit>
+		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/Team.h">
+			<Option target="ChainReactionGame"/>
+		</Unit>
 		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/main.cpp">
 			<Option target="ChainReactionGame"/>
 		</Unit>

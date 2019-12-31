@@ -136,6 +136,36 @@ shapes/fast:
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/build
 .PHONY : shapes/fast
 
+Box.o: Box.cpp.o
+
+.PHONY : Box.o
+
+# target to build an object file
+Box.cpp.o:
+	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.o
+	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.o
+.PHONY : Box.cpp.o
+
+Box.i: Box.cpp.i
+
+.PHONY : Box.i
+
+# target to preprocess a source file
+Box.cpp.i:
+	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.i
+	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.i
+.PHONY : Box.cpp.i
+
+Box.s: Box.cpp.s
+
+.PHONY : Box.s
+
+# target to generate assembly for a file
+Box.cpp.s:
+	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.s
+	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.s
+.PHONY : Box.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -200,6 +230,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... ChainReactionGame"
 	@echo "... shapes"
+	@echo "... Box.o"
+	@echo "... Box.i"
+	@echo "... Box.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
