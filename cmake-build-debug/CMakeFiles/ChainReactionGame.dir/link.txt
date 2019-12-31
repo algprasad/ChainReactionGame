@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ChainReactionGame.dir/main.cpp.o  -o ChainReactionGame -Wl,-rpath,/home/alg/Documents/SFML-2.5.1/lib /home/alg/Documents/SFML-2.5.1/lib/libsfml-graphics.so.2.5.1 /home/alg/Documents/SFML-2.5.1/lib/libsfml-audio.so.2.5.1 /home/alg/Documents/SFML-2.5.1/lib/libsfml-window.so.2.5.1 /home/alg/Documents/SFML-2.5.1/lib/libsfml-system.so.2.5.1 
