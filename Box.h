@@ -7,6 +7,8 @@
 
 #include "Team.h"
 #include <SFML/Graphics.hpp>
+#include <vector>
+
 enum BoxNature{
     corner,
     edge,
@@ -16,12 +18,14 @@ enum BoxNature{
 class Box {
 
 private:
+    int index_i_, index_j_;
     Team team_;
     int num_bombs_;
     sf::RectangleShape rectangle_;
     sf::Text display_num_;
     int max_bombs_;
     BoxNature  nature_box_;
+    std::vector<std::vector<int> > adjacent_boxes_;
 
 public:
 
@@ -42,6 +46,9 @@ public:
     void changeTeam(Team team);
     void setRectanglePosition(float x, float y);
     void setMaxBombs(int x, int y);
+    void setIndexes(int i, int j);
+    void setAdjacentBoxes(int i, int j );
+    void addElements2Vector(std::vector<std::vector<int> >& two_d_vector, int i, int j);
     sf::RectangleShape getRectangle(){
         return this->rectangle_;
     };
@@ -50,6 +57,10 @@ public:
     }
     int getNumBombs(){
         return num_bombs_;
+    }
+
+    BoxNature getBoxNature(){
+        return this->nature_box_;
     }
 
     int getMaxBombs(){
@@ -63,6 +74,12 @@ public:
     Team getTeam(){
         return team_;
     }
+
+    std::vector<std::vector<int> > getAdjacentBoxIndicies(){
+        return this->adjacent_boxes_;
+    }
+
+    //
 };
 
 

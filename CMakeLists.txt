@@ -9,7 +9,7 @@ find_package(SFML 2.4 COMPONENTS system window graphics REQUIRED)
 include_directories(${SFML_INCLUDE_DIR} /home/alg/Documents/SFML-2.5.1/include/)
 
 
-set(ClassFiles Box.cpp Box.h Team.h)
+set(ClassFiles Box.cpp Box.h Team.h )
 set(Sfml_libraries sfml-graphics sfml-audio )
 
 add_executable(ChainReactionGame main.cpp ${ClassFiles})

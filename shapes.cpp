@@ -37,14 +37,17 @@ bool shouldExplode(Box box){
     return  false;
 }
 
-void explodeBox(Box boxes[9][12], int i, int j ){
+void explodeBox(Box boxes[][12], int i, int j, const Team current_team){
     //put the number of bombs in the box = 0
     boxes[i][j].setNumberOfBombs(0);
 
-    //depending on the nature of the box increase the number of bombs in the adjacent boxes by 1
-    ///if(boxes)
-    //boxes[][]
-    //check if the adjacent boxes should explode and call the explode function
+    //using the adjacent_boxes  member add one to each neighbour
+    for(int k = 0; k< boxes[i][j].getAdjacentBoxIndicies().size(); k++){
+        boxes[boxes[i][j].getAdjacentBoxIndicies()[k][0]][boxes[i][j].getAdjacentBoxIndicies()[k][1]].setNumberOfBombs(boxes[boxes[i][j].getAdjacentBoxIndicies()[k][0]][boxes[i][j].getAdjacentBoxIndicies()[k][1]].getNumBombs() + 1);
+        boxes[boxes[i][j].getAdjacentBoxIndicies()[k][0]][boxes[i][j].getAdjacentBoxIndicies()[k][1]].changeTeam(current_team);
+        if(shouldExplode(boxes[boxes[i][j].getAdjacentBoxIndicies()[k][0]][boxes[i][j].getAdjacentBoxIndicies()[k][1]]))
+            explodeBox(boxes, boxes[i][j].getAdjacentBoxIndicies()[k][0], boxes[i][j].getAdjacentBoxIndicies()[k][1], current_team);
+    }
 
 }
 
@@ -68,6 +71,8 @@ int main(){
             boxes[i][j].setRectanglePosition(x_axis, y_axis);
             boxes[i][j].setRectangleColor();
             boxes[i][j].setMaxBombs(i, j);
+            boxes[i][j].setBoxNature(i, j);
+            boxes[i][j].setAdjacentBoxes(i, j);
 
         }
     }
@@ -105,7 +110,7 @@ int main(){
                     boxes[box_i][box_j].setNumberOfBombs(boxes[box_i][box_j].getNumBombs() + 1);
 
                     /// check if the number of bombs is more than the max it can hold if yes then explode
-                    if(shouldExplode(boxes[box_i][box_j])) explodeBox(boxes, box_i, box_j);
+                    if(shouldExplode(boxes[box_i][box_j])) explodeBox(boxes, box_i, box_j, boxes[box_i][box_j].getTeam());
 
                     chance_number++;
                 }

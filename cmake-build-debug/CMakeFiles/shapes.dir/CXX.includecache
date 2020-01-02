@@ -15,19 +15,9 @@ Team.h
 /home/alg/CLionProjects/ChainReactionGame/Team.h
 SFML/Graphics.hpp
 -
+vector
+-
 
-/home/alg/CLionProjects/ChainReactionGame/Team.h
-
-/home/alg/CLionProjects/ChainReactionGame/shapes.cpp
-iostream
--
-SFML/Graphics.hpp
--
-Box.h
-/home/alg/CLionProjects/ChainReactionGame/Box.h
-string
--
-Team.h
 /home/alg/CLionProjects/ChainReactionGame/Team.h
 
 /home/alg/Documents/SFML-2.5.1/include/SFML/Config.hpp
