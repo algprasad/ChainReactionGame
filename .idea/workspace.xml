@@ -13,13 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd0b0460-fe85-483e-bd01-3b09814092c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ChainReactionGame.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ChainReactionGame.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +72,7 @@
       <updated>1577800000522</updated>
       <workItem from="1577800001716" duration="19379000" />
       <workItem from="1577875976207" duration="2788000" />
-      <workItem from="1577977061403" duration="11329000" />
+      <workItem from="1577977061403" duration="12588000" />
     </task>
     <task id="LOCAL-00001" summary="no changes">
       <created>1577812866477</created>
@@ -115,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577999186371</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed main source file name">
+      <created>1577999361405</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577999361405</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated the .gitignore">
+      <created>1578000327668</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578000327668</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +148,8 @@
     <MESSAGE value="implemented box numbers" />
     <MESSAGE value="first playable version!" />
     <MESSAGE value="removed bg_music.ogg" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed bg_music.ogg" />
+    <MESSAGE value="changed main source file name" />
+    <MESSAGE value="updated the .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the .gitignore" />
   </component>
 </project>
