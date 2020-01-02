@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/alg/CLionProjects/ChainReactionGame/Box.cpp
+Box.h
+/home/alg/CLionProjects/ChainReactionGame/Box.h
+
 /home/alg/CLionProjects/ChainReactionGame/Box.h
 Team.h
 /home/alg/CLionProjects/ChainReactionGame/Team.h
@@ -23,6 +27,8 @@ Box.h
 /home/alg/CLionProjects/ChainReactionGame/Box.h
 string
 -
+Team.h
+/home/alg/CLionProjects/ChainReactionGame/Team.h
 
 /home/alg/Documents/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

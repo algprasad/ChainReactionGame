@@ -7,6 +7,12 @@
 
 #include "Team.h"
 #include <SFML/Graphics.hpp>
+enum BoxNature{
+    corner,
+    edge,
+    regular
+};
+
 class Box {
 
 private:
@@ -14,6 +20,8 @@ private:
     int num_bombs_;
     sf::RectangleShape rectangle_;
     sf::Text display_num_;
+    int max_bombs_;
+    BoxNature  nature_box_;
 
 public:
 
@@ -24,11 +32,8 @@ public:
 
         rectangle_.setSize(sf::Vector2f(75, 75));
         num_bombs_ = 0;
-       // display_num_.setFont(font);
-        display_num_.setFillColor(sf::Color(100, 100, 0));
-        display_num_.setString("0");
-        display_num_.setCharacterSize(20);
         team_ = Team::grey;
+
 
     }
 
@@ -36,6 +41,7 @@ public:
     void setNumberOfBombs(int num);
     void changeTeam(Team team);
     void setRectanglePosition(float x, float y);
+    void setMaxBombs(int x, int y);
     sf::RectangleShape getRectangle(){
         return this->rectangle_;
     };
@@ -46,7 +52,13 @@ public:
         return num_bombs_;
     }
 
+    int getMaxBombs(){
+        return this->max_bombs_;
+    }
+
     void setRectangleColor();
+
+    void setBoxNature(int i, int j);
 
     Team getTeam(){
         return team_;

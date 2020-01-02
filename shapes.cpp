@@ -6,8 +6,51 @@
 #include <SFML/Graphics.hpp>
 #include "Box.h"
 #include <string>
+#include "Team.h"
+
+
+Team whoseChance(int chance_num, int num_players){
+    //Use swtich case to determine whose chance is it
+    int num = chance_num%num_players;
+    switch(num){
+        case 0: return Team::red;
+        case 1: return Team::green;
+        case 2: return Team::blue;
+        case 3: return Team::yellow;
+        case 4: return Team::violet;
+        case 5: return Team::orange;
+        case 6: return Team::brown;
+        default:
+            return  Team::grey;
+    }
+
+}
+
+bool isMoveValid(Team current_team, Box& current_box){
+    if(current_box.getTeam() == current_team || current_box.getTeam() == Team::grey) return true;
+    else return false;
+
+}
+
+bool shouldExplode(Box box){
+    if(box.getNumBombs() == box.getMaxBombs()) return true;
+    return  false;
+}
+
+void explodeBox(Box boxes[9][12], int i, int j ){
+    //put the number of bombs in the box = 0
+    boxes[i][j].setNumberOfBombs(0);
+
+    //depending on the nature of the box increase the number of bombs in the adjacent boxes by 1
+    ///if(boxes)
+    //boxes[][]
+    //check if the adjacent boxes should explode and call the explode function
+
+}
 
 int main(){
+
+    int number_of_players = 2;
 
     sf::Font font;
     if (!font.loadFromFile("/home/alg/CLionProjects/ChainReactionGame/OpenSans-Regular.ttf"))
@@ -24,6 +67,7 @@ int main(){
             y_axis = 10 + j*80;
             boxes[i][j].setRectanglePosition(x_axis, y_axis);
             boxes[i][j].setRectangleColor();
+            boxes[i][j].setMaxBombs(i, j);
 
         }
     }
@@ -33,10 +77,10 @@ int main(){
     int chance_number =0;
 
     while(window.isOpen()){
-        //if(chance_number%0 == 0) std::cout<< "Red's turn"<<std::endl;
-        //else std::cout<<"Green's turn"<<std::endl;
 
-        //proper way to close the window
+        //know whose chance is it
+        Team current_team = whoseChance(chance_number, number_of_players);
+
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -47,20 +91,32 @@ int main(){
                 //TODO run the whole game algorithm here
                 std::cout<<"Mouse Pressed!!\n";
                 std::cout<<event.mouseButton.x<<" "<<event.mouseButton.y<<"\n";
+                int box_i = (event.mouseButton.x - 10)/80;
+                int box_j = (event.mouseButton.y - 10)/80;
+
+                std::cout<<"Mouse pressed inside box"<<box_i<<" "<<box_j<<std::endl;
+
+                //check if its a valid move
+                if(!isMoveValid(current_team, boxes[box_i][box_j])) std::cout<<"Invalid Move\n";
+
+                //Move is valid
+                else{
+                    boxes[box_i][box_j].changeTeam(current_team);
+                    boxes[box_i][box_j].setNumberOfBombs(boxes[box_i][box_j].getNumBombs() + 1);
+
+                    /// check if the number of bombs is more than the max it can hold if yes then explode
+                    if(shouldExplode(boxes[box_i][box_j])) explodeBox(boxes, box_i, box_j);
+
+                    chance_number++;
+                }
+
+
 
             }
 
         }
 
         window.clear();
-
-
-        ///Here is where the game happens. where the composition of the boxes change
-        //TODO: find a way to wait for other person's turn and the click.
-        boxes[0][5].changeTeam(Team::red);
-        boxes[1][5].changeTeam(Team::green);
-
-
 
         //a for loop to draw the rectangles in different positions
         for(int i = 0; i< 9; i++){

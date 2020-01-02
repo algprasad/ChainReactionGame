@@ -23,3 +23,17 @@ void Box::setRectangleColor() {
 
 }
 
+void Box::setMaxBombs(int x, int y) {
+    //Corner pieces
+    if(x==0 && y == 0 || (x== 8 && y == 11) || (x == 8 && y == 0)|| (x == 0 && y == 11 )) this->max_bombs_ = 2;
+    if(x == 0 || x == 8 ||  y == 0 || y == 11 ) this->max_bombs_ = 3;
+    else this->max_bombs_ = 4;
+
+}
+
+void Box::setBoxNature(int i, int j) {
+    if(this->max_bombs_ == 2) this->nature_box_ = BoxNature ::corner;
+    else if (this->max_bombs_ == 3 ) this-> nature_box_ = BoxNature ::edge;
+    else this->nature_box_ = BoxNature ::regular;
+}
+
