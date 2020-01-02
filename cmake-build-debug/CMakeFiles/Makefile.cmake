@@ -53,6 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ChainReactionGame.dir/DependInfo.cmake"
   "CMakeFiles/shapes.dir/DependInfo.cmake"
   )

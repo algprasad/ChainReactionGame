@@ -1,4 +1,3 @@
 /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles/ChainReactionGame.dir
 /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles/shapes.dir
+/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles/edit_cache.dir

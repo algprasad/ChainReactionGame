@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="ChainReactionGame" targetName="ChainReactionGame" />
       <config projectName="ChainReactionGame" targetName="shapes" />
     </generated>
   </component>
@@ -13,14 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0b0460-fe85-483e-bd01-3b09814092c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Box.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box.h" beforeDir="false" afterPath="$PROJECT_DIR$/Box.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg_music.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/black_texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/shapes.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/shapes.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/shapes" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/shapes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/shapes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/shapes.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ChainReactionGame.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ChainReactionGame.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/shapes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid9x12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,21 +67,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.shapes">
-    <configuration name="ChainReactionGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ChainReactionGame" TARGET_NAME="ChainReactionGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ChainReactionGame" RUN_TARGET_NAME="ChainReactionGame">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="shapes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ChainReactionGame" TARGET_NAME="shapes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ChainReactionGame" RUN_TARGET_NAME="shapes">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="CMake Application.ChainReactionGame" />
-      <item itemvalue="CMake Application.shapes" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,7 +86,7 @@
       <updated>1577800000522</updated>
       <workItem from="1577800001716" duration="19379000" />
       <workItem from="1577875976207" duration="2788000" />
-      <workItem from="1577977061403" duration="10612000" />
+      <workItem from="1577977061403" duration="11078000" />
     </task>
     <task id="LOCAL-00001" summary="no changes">
       <created>1577812866477</created>
@@ -111,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577981001696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first playable version!">
+      <created>1577998638275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577998638275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +139,7 @@
     <MESSAGE value="no changes" />
     <MESSAGE value="completed grids, numbers, mouse events" />
     <MESSAGE value="implemented box numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented box numbers" />
+    <MESSAGE value="first playable version!" />
+    <option name="LAST_COMMIT_MESSAGE" value="first playable version!" />
   </component>
 </project>

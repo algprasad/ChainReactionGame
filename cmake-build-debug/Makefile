@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ChainReactionGame
-
-# Build rule for target.
-ChainReactionGame: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ChainReactionGame
-.PHONY : ChainReactionGame
-
-# fast build rule for target.
-ChainReactionGame/fast:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/build
-.PHONY : ChainReactionGame/fast
-
-#=============================================================================
 # Target rules for targets named shapes
 
 # Build rule for target.
@@ -142,7 +129,6 @@ Box.o: Box.cpp.o
 
 # target to build an object file
 Box.cpp.o:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.o
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.o
 .PHONY : Box.cpp.o
 
@@ -152,7 +138,6 @@ Box.i: Box.cpp.i
 
 # target to preprocess a source file
 Box.cpp.i:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.i
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.i
 .PHONY : Box.cpp.i
 
@@ -162,36 +147,8 @@ Box.s: Box.cpp.s
 
 # target to generate assembly for a file
 Box.cpp.s:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/Box.cpp.s
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.s
 .PHONY : Box.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 shapes.o: shapes.cpp.o
 
@@ -227,15 +184,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... ChainReactionGame"
 	@echo "... shapes"
+	@echo "... edit_cache"
 	@echo "... Box.o"
 	@echo "... Box.i"
 	@echo "... Box.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... shapes.o"
 	@echo "... shapes.i"
 	@echo "... shapes.s"

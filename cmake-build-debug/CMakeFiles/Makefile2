@@ -53,13 +53,11 @@ CMAKE_BINARY_DIR = /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ChainReactionGame.dir/all
 all: CMakeFiles/shapes.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ChainReactionGame.dir/clean
 clean: CMakeFiles/shapes.dir/clean
 
 .PHONY : clean
@@ -70,40 +68,13 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/ChainReactionGame.dir
-
-# All Build rule for target.
-CMakeFiles/ChainReactionGame.dir/all:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/depend
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target ChainReactionGame"
-.PHONY : CMakeFiles/ChainReactionGame.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ChainReactionGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChainReactionGame.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ChainReactionGame.dir/rule
-
-# Convenience name for target.
-ChainReactionGame: CMakeFiles/ChainReactionGame.dir/rule
-
-.PHONY : ChainReactionGame
-
-# clean rule for target.
-CMakeFiles/ChainReactionGame.dir/clean:
-	$(MAKE) -f CMakeFiles/ChainReactionGame.dir/build.make CMakeFiles/ChainReactionGame.dir/clean
-.PHONY : CMakeFiles/ChainReactionGame.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/shapes.dir
 
 # All Build rule for target.
 CMakeFiles/shapes.dir/all:
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/depend
 	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target shapes"
 .PHONY : CMakeFiles/shapes.dir/all
 
 # Build rule for subdir invocation for target.
