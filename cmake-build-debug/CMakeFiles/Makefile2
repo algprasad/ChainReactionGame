@@ -53,12 +53,12 @@ CMAKE_BINARY_DIR = /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/shapes.dir/all
+all: CMakeFiles/Game.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/shapes.dir/clean
+clean: CMakeFiles/Game.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/shapes.dir
+# Target rules for target CMakeFiles/Game.dir
 
 # All Build rule for target.
-CMakeFiles/shapes.dir/all:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/depend
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target shapes"
-.PHONY : CMakeFiles/shapes.dir/all
+CMakeFiles/Game.dir/all:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/depend
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Game"
+.PHONY : CMakeFiles/Game.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/shapes.dir/rule: cmake_check_build_system
+CMakeFiles/Game.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/shapes.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/shapes.dir/rule
+.PHONY : CMakeFiles/Game.dir/rule
 
 # Convenience name for target.
-shapes: CMakeFiles/shapes.dir/rule
+Game: CMakeFiles/Game.dir/rule
 
-.PHONY : shapes
+.PHONY : Game
 
 # clean rule for target.
-CMakeFiles/shapes.dir/clean:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/clean
-.PHONY : CMakeFiles/shapes.dir/clean
+CMakeFiles/Game.dir/clean:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/clean
+.PHONY : CMakeFiles/Game.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

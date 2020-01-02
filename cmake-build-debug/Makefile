@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named shapes
+# Target rules for targets named Game
 
 # Build rule for target.
-shapes: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shapes
-.PHONY : shapes
+Game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Game
+.PHONY : Game
 
 # fast build rule for target.
-shapes/fast:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/build
-.PHONY : shapes/fast
+Game/fast:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
+.PHONY : Game/fast
 
 Box.o: Box.cpp.o
 
@@ -129,7 +129,7 @@ Box.o: Box.cpp.o
 
 # target to build an object file
 Box.cpp.o:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.o
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Box.cpp.o
 .PHONY : Box.cpp.o
 
 Box.i: Box.cpp.i
@@ -138,7 +138,7 @@ Box.i: Box.cpp.i
 
 # target to preprocess a source file
 Box.cpp.i:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.i
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Box.cpp.i
 .PHONY : Box.cpp.i
 
 Box.s: Box.cpp.s
@@ -147,35 +147,35 @@ Box.s: Box.cpp.s
 
 # target to generate assembly for a file
 Box.cpp.s:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/Box.cpp.s
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/Box.cpp.s
 .PHONY : Box.cpp.s
 
-shapes.o: shapes.cpp.o
+main.o: main.cpp.o
 
-.PHONY : shapes.o
+.PHONY : main.o
 
 # target to build an object file
-shapes.cpp.o:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/shapes.cpp.o
-.PHONY : shapes.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-shapes.i: shapes.cpp.i
+main.i: main.cpp.i
 
-.PHONY : shapes.i
+.PHONY : main.i
 
 # target to preprocess a source file
-shapes.cpp.i:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/shapes.cpp.i
-.PHONY : shapes.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-shapes.s: shapes.cpp.s
+main.s: main.cpp.s
 
-.PHONY : shapes.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-shapes.cpp.s:
-	$(MAKE) -f CMakeFiles/shapes.dir/build.make CMakeFiles/shapes.dir/shapes.cpp.s
-.PHONY : shapes.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -184,14 +184,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... shapes"
+	@echo "... Game"
 	@echo "... edit_cache"
 	@echo "... Box.o"
 	@echo "... Box.i"
 	@echo "... Box.s"
-	@echo "... shapes.o"
-	@echo "... shapes.i"
-	@echo "... shapes.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

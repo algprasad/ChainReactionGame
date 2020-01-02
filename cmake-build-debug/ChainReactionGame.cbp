@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="shapes">
-				<Option output="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/shapes" prefix_auto="0" extension_auto="0"/>
+			<Target title="Game">
+				<Option output="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -45,14 +45,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 shapes"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="shapes/fast">
-				<Option output="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/shapes" prefix_auto="0" extension_auto="0"/>
+			<Target title="Game/fast">
+				<Option output="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Game" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -69,7 +69,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 shapes/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 Game/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/alg/CLionProjects/ChainReactionGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -87,13 +87,13 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/Box.cpp">
-			<Option target="shapes"/>
+			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/Box.h">
-			<Option target="shapes"/>
+			<Option target="Game"/>
 		</Unit>
-		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/shapes.cpp">
-			<Option target="shapes"/>
+		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/main.cpp">
+			<Option target="Game"/>
 		</Unit>
 		<Unit filename="/home/alg/CLionProjects/ChainReactionGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

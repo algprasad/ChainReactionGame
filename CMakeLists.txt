@@ -12,7 +12,7 @@ include_directories(${SFML_INCLUDE_DIR} /home/alg/Documents/SFML-2.5.1/include/)
 set(ClassFiles Box.cpp Box.h Team.h )
 set(Sfml_libraries sfml-graphics sfml-audio )
 
-add_executable(shapes shapes.cpp Box.h Box.cpp)
+add_executable(Game main.cpp Box.h Box.cpp)
 
 #target_link_libraries(ChainReactionGame sfml-graphics sfml-audio )
-target_link_libraries(shapes sfml-graphics sfml-audio)
+target_link_libraries(Game sfml-graphics sfml-audio)
